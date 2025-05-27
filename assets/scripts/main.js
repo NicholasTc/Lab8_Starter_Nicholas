@@ -59,7 +59,7 @@ function initializeServiceWorker() {
   window.addEventListener('load', async () => {
     /* ---------- B3: try to register sw.js at the site root ---------- */
     try {
-      const reg = await navigator.serviceWorker.register('/sw.js');
+      const reg = await navigator.serviceWorker.register('./sw.js');
 
       /* ---------- B4: success message ---------- */
       console.log('✅ ServiceWorker registered:', reg);
